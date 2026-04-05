@@ -61,6 +61,7 @@ BUY-ITEM.
 
   PERFORM UNTIL BUY-QTY > 0
     DISPLAY FUNCTION TRIM(LK-ITEM-NAME(COMMAND)) "をいくつ購入しますか？"
+    DISPLAY "価格：" LK-ITEM-PRICE(COMMAND) "G/個"
     DISPLAY "所持金：" LK-MONEY "G"
     DISPLAY "キャンセルする場合は0を入力してください"
     ACCEPT BUY-QTY-STR
