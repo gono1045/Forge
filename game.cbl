@@ -47,7 +47,7 @@
     *>  メイン処理
     *> ====================
     MAIN.
-      DISPLAY "PROGRAM START"
+      DISPLAY "Forgeへようこそ"
       PERFORM GAME-LOOP
       STOP RUN.
     

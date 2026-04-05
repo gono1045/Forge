@@ -255,6 +255,7 @@
           MOVE 0 TO DEFENSE-MODE
         END-IF
 
+        DISPLAY "あなたに" DAMAGE "のダメージ！"
         SUBTRACT DAMAGE FROM LK-PLAYER-HP
 
         IF LK-PLAYER-HP < 0
@@ -271,5 +272,5 @@
       ADD REWARD-MONEY TO LK-MONEY
       ADD 1 TO LK-ORE-STOCK
       DISPLAY "鉱石 +1"
-      DISPLAY "獲得金額：" REWARD-MONEY
+      DISPLAY "獲得金額：" REWARD-MONEY "G"
       DISPLAY "所持金：" LK-MONEY.
